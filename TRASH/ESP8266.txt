@@ -1,0 +1,3 @@
+Install driver for pc
+ArduinoIde
+Install board esp8266
