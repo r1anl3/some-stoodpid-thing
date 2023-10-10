@@ -1,0 +1,11 @@
+thiet ke mo hinh mang
+    ket noi moi thiet bi, moi noi, moi luc
+    phan cap
+mo hinh phan cap
+    moi cap co chuc nang khac nhau
+    core layer, distribution layer, access layer
+    three tied layer: day du
+    two tied layer: khong day du
+    redundant network: moi thiet bi deu co backup
+    modular network design:
+    hot standby router protocol(hsrp)
