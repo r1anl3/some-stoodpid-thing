@@ -1,0 +1,7 @@
+RUN AS UBUNTU CONTAINER:
+    docker run -i -t ubuntu /bin/bash
+CREATE DOCKER CONTAINER:
+    docker container create
+    -i interactively
+    -t attached
+    exit terminate the /bin/bash, container is not removed.

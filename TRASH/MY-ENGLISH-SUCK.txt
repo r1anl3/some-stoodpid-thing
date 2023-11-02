@@ -1,0 +1,5 @@
+express(v): to show a feeling, opinion for fact.
+    Written to express not impress
+
+tailor(v): to make or prepare something following particular instruction.
+    not tailored to the possition
