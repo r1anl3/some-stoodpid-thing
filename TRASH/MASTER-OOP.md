@@ -1,10 +1,11 @@
 # Object Oriented Programming
+## _4 pilars_
 - Abstract: trừu tượng hóa, mô hình hóa.
 --Class: prototype, khuôn mẫu.
 --Object: thực thể
 - Encapsulation: đóng gói
 --Access modifier: private, public, protected
---Field, metho
+--Field, method
 --Cho thấy thứ cần thấy
 - Inheritance: kế thừa
 
