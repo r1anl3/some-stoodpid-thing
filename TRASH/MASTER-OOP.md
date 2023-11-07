@@ -1,5 +1,5 @@
 # Object Oriented Programming
-## _4 pilars_
+## *4 pilars*
 - Abstract: trừu tượng hóa, mô hình hóa.
 --Class: prototype, khuôn mẫu.
 --Object: thực thể
