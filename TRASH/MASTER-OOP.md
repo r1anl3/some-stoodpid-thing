@@ -87,3 +87,28 @@ classDiagram
       - Dependency Injection: trong runtime, có thể chọn khi nào dùng **class A**, khi nào dùng **class B**
     - Liskov Substituition: 
       - Class con có khả năng thay thể được class cha.
+      - Không làm mất đi tính đúng.
+
+      ```mermaid
+      classDiagram
+            SavingAccount <|-- WithdrawableAccount
+            SavingAccount <|-- NonWithdrawableAccount
+            SavingAccount: +withDraw(amt)
+
+            class WithdrawableAccount{
+                  +withDraw(amt)
+            }
+            class NonWithdrawableAccount{
+                  +deposit(amt)
+            }
+
+            WithdrawableAccount  <|-- GeneralAccount
+            class GeneralAccount{
+                  +withDraw(amt)
+            }
+
+            NonWithdrawableAccount  <|-- KidsAccount
+            class KidsAccount{
+                  +withDraw(amt)
+            }
+      ```
