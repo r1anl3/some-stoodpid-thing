@@ -46,7 +46,8 @@ classDiagram
       }
 ```
 
-## S.O.L.I.D
+## *S.O.L.I.D*
 - Make code more readable.
 - Stand for:
-    - Single Resposibility 
+    - Single Resposibility: 
+      - Mỗi class chỉ làm đúng việc của nó
