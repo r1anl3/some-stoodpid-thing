@@ -49,4 +49,4 @@ classDiagram
 ## S.O.L.I.D
 - Make code more readable.
 - Stand for:
-      - Single Resposibility 
+    - Single Resposibility 
