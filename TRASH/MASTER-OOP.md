@@ -1,7 +1,7 @@
 # Object Oriented Programming
 ## *4 pilars*
-- Abstract: trừu tượng hóa, mô hình hóa.
-      - Class: prototype, khuôn mẫu.
+- Abstract: trừu tượng hóa, mô hình hóa
+      - Class: prototype, khuôn mẫu
       - Object: thực thể
 - Encapsulation: đóng gói
       - Access modifier: private, public, protected
@@ -45,3 +45,8 @@ classDiagram
             gotowork() designing
       }
 ```
+
+## S.O.L.I.D
+- Make code more readable.
+- Stand for:
+      - Single Resposibility 
