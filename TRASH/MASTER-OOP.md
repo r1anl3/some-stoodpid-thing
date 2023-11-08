@@ -50,4 +50,40 @@ classDiagram
 - Make code more readable.
 - Stand for:
     - Single Resposibility: 
-      - Mỗi class chỉ làm đúng việc của nó
+      - Mỗi class chỉ làm đúng việc của nó.
+      - Chia thành nhiều class (micro services).
+
+      ```mermaid
+      flowchart LR
+      user("User")
+      service1("PostService")
+      service2("FriendService")
+      service3("MessageService")
+      user --> service1
+      user --> service2
+      user --> service3
+      ```
+    - Open-Closed: open for **extension** but close for **modification**
+      - Use ***Decorator Design Patten***
+      ```Java
+      public class A implements FeatureInterface {
+            public void doSomething() {
+                  // Your code here
+            }
+      }
+      ```
+      ```Java
+      public class B implements FeatureInterface {
+            protected FeatureInterface a;
+            protected B(FeatureInterface a) {
+                  this.a = a;
+            }
+
+            public void doSomething() {
+                  this.a.doSomething();
+            }
+      }
+      ```
+      - Dependency Injection: trong runtime, có thể chọn khi nào dùng **class A**, khi nào dùng **class B**
+    - Liskov Substituition: 
+      - Class con có khả năng thay thể được class cha.
