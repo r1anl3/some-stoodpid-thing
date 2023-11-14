@@ -143,3 +143,26 @@ classDiagram
       public interface IRespository<T> : IReadRepository<T>, IWriteRepository<T>, IDeleteRepository<T> // Use as many interfaces as need
    }
    ```
+   - Dependency Inversion: 
+      - Các class không nên depend lẫn nhau.
+      - Chỉ nên depend theo interface.
+     ```java
+     public class BlogService {
+      private readonly IRepository<Blog> repo;
+      protected BlogService(IRepository<Blog> repo) {
+            this.repo = repo;
+      }
+
+      public void doSomething() {
+            this.repo
+      }
+     }
+     ```
+     ```mermaid
+      flowchart LR
+            id1([SERVICE])
+            id2([REPOSITORY])
+            id3([IREPOSITORY])
+            id1 ---- id3
+            id2 ---- id3
+     ```
