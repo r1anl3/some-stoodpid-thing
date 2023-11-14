@@ -112,3 +112,34 @@ classDiagram
                   +withDraw(amt)
             }
       ```
+    - Interface Segretation: không nên để 1 interface quá lớn 
+   ```c#
+   namespace RepositoryPattern.Interfaces 
+   {
+      public partial interface IReadRespository<T> where T : class 
+      {
+            // Read method
+      }
+   }
+
+   namespace RepositoryPattern.Interfaces 
+   {
+      public partial interface IWriteRespository<T> where T : class 
+      {
+            // Write method
+      }
+   }
+
+   namespace RepositoryPattern.Interfaces 
+   {
+      public partial interface IDeleteRespository<T> where T : class 
+      {
+            // Delete method
+      }
+   }
+
+   namespace RepositoryPattern.Interfaces 
+   {
+      public interface IRespository<T> : IReadRepository<T>, IWriteRepository<T>, IDeleteRepository<T> // Use as many interfaces as need
+   }
+   ```
