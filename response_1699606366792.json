@@ -1,0 +1,331 @@
+[
+  {
+    "descriptorType": "asset",
+    "name": "ArtnetLightAsset",
+    "icon": "lightbulb",
+    "colour": "e6688a"
+  },
+  {
+    "descriptorType": "agent",
+    "name": "ZWaveAgent",
+    "icon": "cogs",
+    "colour": "000000",
+    "assetDiscovery": true,
+    "assetImport": false,
+    "agentLinkType": "ZWaveAgentLink"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "ConsoleAsset",
+    "icon": "monitor-cellphone"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "EnvironmentSensorAsset",
+    "icon": "molecule-co2",
+    "colour": "f18546"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "RoomAsset",
+    "icon": "door",
+    "colour": "2eaaa2"
+  },
+  {
+    "descriptorType": "agent",
+    "name": "MQTTAgent",
+    "icon": "cogs",
+    "colour": "000000",
+    "assetDiscovery": false,
+    "assetImport": false,
+    "agentLinkType": "MQTTAgentLink"
+  },
+  {
+    "descriptorType": "agent",
+    "name": "VelbusTCPAgent",
+    "icon": "cogs",
+    "colour": "000000",
+    "assetDiscovery": false,
+    "assetImport": true,
+    "agentLinkType": "VelbusAgentLink"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "ElectricityProducerAsset",
+    "icon": "flash",
+    "colour": "EABB4D"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "ElectricityProducerSolarAsset",
+    "icon": "white-balance-sunny",
+    "colour": "EABB4D"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "WeatherAsset",
+    "icon": "weather-partly-cloudy",
+    "colour": "49B0D8"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "PlugAsset",
+    "icon": "power-socket-eu",
+    "colour": "e6688a"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "ShipAsset",
+    "icon": "ferry",
+    "colour": "000080"
+  },
+  {
+    "descriptorType": "agent",
+    "name": "SNMPAgent",
+    "icon": "cogs",
+    "colour": "000000",
+    "assetDiscovery": false,
+    "assetImport": false,
+    "agentLinkType": "SNMPAgentLink"
+  },
+  {
+    "descriptorType": "agent",
+    "name": "MailAgent",
+    "icon": "cogs",
+    "colour": "000000",
+    "assetDiscovery": false,
+    "assetImport": false,
+    "agentLinkType": "MailAgentLink"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "ElectricityChargerAsset",
+    "icon": "ev-station",
+    "colour": "8A293D"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "GroundwaterSensorAsset",
+    "icon": "water-outline",
+    "colour": "95d0df"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "PresenceSensorAsset",
+    "icon": "eye-circle",
+    "colour": "5a20cc"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "PeopleCounterAsset",
+    "icon": "account-multiple",
+    "colour": "4b5966"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "ElectricVehicleAsset",
+    "icon": "car-electric",
+    "colour": "49B0D8"
+  },
+  {
+    "descriptorType": "agent",
+    "name": "TCPAgent",
+    "icon": "cogs",
+    "colour": "000000",
+    "assetDiscovery": false,
+    "assetImport": false,
+    "agentLinkType": "DefaultAgentLink"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "LightAsset",
+    "icon": "lightbulb",
+    "colour": "e6688a"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "GatewayAsset",
+    "icon": "router-wireless"
+  },
+  {
+    "descriptorType": "agent",
+    "name": "UDPAgent",
+    "icon": "cogs",
+    "colour": "000000",
+    "assetDiscovery": false,
+    "assetImport": false,
+    "agentLinkType": "DefaultAgentLink"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "VentilationAsset",
+    "icon": "fan",
+    "colour": "0b99c3"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "MicrophoneAsset",
+    "icon": "microphone",
+    "colour": "47A5FF"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "BuildingAsset",
+    "icon": "office-building",
+    "colour": "4b5966"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "ElectricityProducerWindAsset",
+    "icon": "wind-turbine",
+    "colour": "4B87EA"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "TradfriLightAsset",
+    "icon": "lightbulb",
+    "colour": "e6688a"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "EnergyOptimisationAsset",
+    "icon": "flash",
+    "colour": "C4DB0D"
+  },
+  {
+    "descriptorType": "agent",
+    "name": "SimulatorAgent",
+    "icon": "cogs",
+    "colour": "000000",
+    "assetDiscovery": false,
+    "assetImport": false,
+    "agentLinkType": "SimulatorAgentLink"
+  },
+  {
+    "descriptorType": "agent",
+    "name": "WebsocketAgent",
+    "icon": "cogs",
+    "colour": "000000",
+    "assetDiscovery": false,
+    "assetImport": false,
+    "agentLinkType": "WebsocketAgentLink"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "ParkingAsset",
+    "icon": "parking",
+    "colour": "0260ae"
+  },
+  {
+    "descriptorType": "agent",
+    "name": "StorageSimulatorAgent",
+    "icon": "cogs",
+    "colour": "000000",
+    "assetDiscovery": false,
+    "assetImport": false,
+    "agentLinkType": "StorageSimulatorAgentLink"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "DoorAsset",
+    "icon": "door",
+    "colour": "ae2eb6"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "CityAsset",
+    "icon": "city"
+  },
+  {
+    "descriptorType": "agent",
+    "name": "VelbusSerialAgent",
+    "icon": "cogs",
+    "colour": "000000",
+    "assetDiscovery": false,
+    "assetImport": true,
+    "agentLinkType": "VelbusAgentLink"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "ElectricitySupplierAsset",
+    "icon": "upload-network",
+    "colour": "9257A9"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "TradfriPlugAsset",
+    "icon": "plug",
+    "colour": "e6688a"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "ThermostatAsset",
+    "icon": "thermostat",
+    "colour": "f5b324"
+  },
+  {
+    "descriptorType": "agent",
+    "name": "BluetoothMeshAgent",
+    "icon": "cogs",
+    "colour": "000000",
+    "assetDiscovery": false,
+    "assetImport": false,
+    "agentLinkType": "BluetoothMeshAgentLink"
+  },
+  {
+    "descriptorType": "agent",
+    "name": "KNXAgent",
+    "icon": "cogs",
+    "colour": "000000",
+    "assetDiscovery": false,
+    "assetImport": true,
+    "agentLinkType": "KNXAgentLink"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "ElectricVehicleFleetGroupAsset",
+    "icon": "car-multiple",
+    "colour": "49B0D8"
+  },
+  {
+    "descriptorType": "agent",
+    "name": "SerialAgent",
+    "icon": "cogs",
+    "colour": "000000",
+    "assetDiscovery": false,
+    "assetImport": false,
+    "agentLinkType": "DefaultAgentLink"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "GroupAsset",
+    "icon": "folder",
+    "colour": "B3B3B3"
+  },
+  {
+    "descriptorType": "agent",
+    "name": "HTTPAgent",
+    "icon": "cogs",
+    "colour": "000000",
+    "assetDiscovery": false,
+    "assetImport": false,
+    "agentLinkType": "HTTPAgentLink"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "ThingAsset",
+    "icon": "cube-outline"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "ElectricityBatteryAsset",
+    "icon": "battery-charging",
+    "colour": "1B7C89"
+  },
+  {
+    "descriptorType": "asset",
+    "name": "ElectricityConsumerAsset",
+    "icon": "power-plug",
+    "colour": "8A293D"
+  }
+]
