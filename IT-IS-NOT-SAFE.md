@@ -16,9 +16,9 @@ Overview
     sequenceDiagram
         actor User
         actor Attacker
+        actor Friend
         User-->>Attacker: I want a 'cracked' game.
         Attacker-->>User: Here you go, have fun :).
-        create actor Friend
         User-->>Friend: 'I have something you don't know'.
         Friend-->>User: 'What is it?'.
         Attacker-->>User: 'But I know :)'.
