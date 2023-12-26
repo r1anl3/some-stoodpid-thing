@@ -1,4 +1,13 @@
 # Ôn tập an toàn mạng 
+```mermaid
+mindmap
+Overview
+    Trojan
+        A type of malware that disguised as a legit program.
+        Unable to manifest itself.
+        A computer infected by Trojan malware can also spread it to other computers.
+
+```
 - Trojan: 
     - A piece of malware or virus, attacker install on devices for malicious purposes. 
     - Appear as a legit file.
