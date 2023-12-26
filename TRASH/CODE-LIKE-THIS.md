@@ -63,3 +63,17 @@
     }
     ```
     - Comment to warning developer about cases that may appeared 
+   ```java
+   void makingCoffee(Object coffeeBean) {
+        // Add coffee bean to coffee maker, serve me a delicious cup of coffee 
+        try {
+            // Add some bean and serve me
+            addCoffeeBeanToCoffeeMaker();
+            serveMe();
+        }
+        catch {
+            // The coffee maker may not be plugged
+            tellMeWhatsWrong();
+        }
+   }
+   ```
