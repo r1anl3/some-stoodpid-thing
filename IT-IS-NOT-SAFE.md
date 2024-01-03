@@ -36,6 +36,9 @@ Overview
                 Attacker-->>User: E* sport, to the game :). 
             ```
     - Remote Access Trojan (RAT): 
+        - Include 2 files: server, client.
+        - Run in background, allow attackers to remote access through specific port.
+        - Ex: Back orifice, Girlfriend, Netbus ...
         ```mermaid
         flowchart LR
         a(Attacker) --> Keyboard 
@@ -45,3 +48,18 @@ Overview
         a --> Microphone
         a --> ...
         ```
+- Keylogger: 
+    - Availible in 2 types: hardware, software.
+    - Record keyboard typing.
+    - Good: monitor children on the internet ...
+    - Bad: Steal password.
+    - 3 parts:
+        - Program: monitor activities.
+        - Hook file: record typing, screen capture.
+        - Log file: record hook history.
+- Trojan coutermeasures:
+    - Avoid email from unknown.
+    - Update OS.
+    - Block unnecessary ports.
+    - Use antivirus software.
+    
