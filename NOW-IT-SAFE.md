@@ -111,3 +111,30 @@
             - Stealth virus: có thể ẩn với chống virus
             - ...
     - Kỹ thuật: 
+        - Lây nhiễm:
+            - Trên boot record/master boot của ổ đĩa: thay thế trên phân vùng hoạt động.
+            - File thực thi: nối thêm, chèn giữa, ghi đè trên file chủ.
+            - Trên file **.COM**:
+                - Mở file
+                - Ghi lại thời gian/thuộc tính
+                - Lưu trữ các byte đầu tiên(thường là 3 byte)
+                - Tính toán lệnh nhảy mới
+                - Đặt lệnh nhảy
+                - Chèn thân virus chính vào
+                - Khôi phục thời gian/thuộc tính
+                - Đóng file
+        - Định vị vùng nhớ:
+            - Chuyển virus, quyền tới vùng nhớ `segment:offset` mới
+            - Boot và file cần có
+        ...
+- Giải thuật mã hoá:
+    - Mã thay thế đơn giản: hoán vị theo khoá.
+    - Mã thay thế n-gram: thay thế cụm n ký tự.
+    - Mã hoán vị bậc d
+    - Mã dịch chuyển
+        - Vigenere: lặp lại ký tự của khoá đến khi = m
+        - Caesar: chỉ có 1 cách, d = 1
+    - OTP:
+        - Đưa m và k về binary (quy định trước)
+        - XOR với nhau 
+        - Đưa về ký tự
