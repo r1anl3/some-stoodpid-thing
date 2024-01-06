@@ -76,4 +76,38 @@
         - Hook file: nhận thao tác
         - Log file: ghi log
 - Virus:
-    - 
+    - Tính chất:
+        - Lây lan
+        - Phá hoại
+        - Nhỏ
+        - Tương thích
+        - Phát triền, kế thừa
+    - Phân loại:
+        - Đối tượng:
+            - Thường trú
+            - Không thường trú
+        - Đối tượng, môi trường:
+            - Boot virus
+            - File-system virus
+            - File-format virus
+            - Macro virus
+            - Script virus
+            - Registry virus
+        - Phương pháp:
+            - Ghi đè
+            - Ghi đè bảo toàn
+            - Dịch chuyển
+            - Song hành
+            - Nối thêm
+            - Chèn giữa
+            - Định hướng lệnh nhảy
+            - Điền khoảng trống
+        - Tính năng, bản chất:
+            - Boot virus: trên boot
+            - File virus: trên file
+            - Macro virus: file microsoft...
+            - Source code virus: trên code của file chủ
+            - Network virus: theo mail, dùng lệnh và giao thức mạng
+            - Stealth virus: có thể ẩn với chống virus
+            - ...
+    - Kỹ thuật: 
