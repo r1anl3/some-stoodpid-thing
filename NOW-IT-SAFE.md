@@ -10,3 +10,70 @@
     - Tìm thông tìn từ dữ liệu mã hóa không cần giải mã.
     - Sử dụng toán học, máy tính hiệu suất cao ...
     - Các chống: sử dụng thuật giải mã hóa không thể hiện cấu trúc thống kê, khóa có độ dài đủ lớn.
+
+- Password pilfering(đánh cắp mật khẩu):
+    - Guessing(đoán mã):
+        - Hiệu quả với mật khẩu ngắn hoặc người dùng quên đổi mật khẩu ngầm định.
+    - Social engineering: 
+        - Mạo danh.
+        - Lừa đảo.
+        - Thu thập thông tin từ giấy tờ bỏ đi.
+        - Tạo website giả mạo.
+    - Dictionary attacks:
+        - Duyệt tìm từ một từ điển (thu được từ các file SAM...) các username và password đã được mã hóa.
+        - Chỉ những mật khẩu mã hóa mới được lưu trên máy tính.
+    - Password sniffing:
+        - Là một phần mềm bắt các thông tin đăng nhập từ xa đối với các ứng dụng mạng phổ biến như Telnet, FTP, SMTP, POP3.
+        - Chống: Có thể dùng những chương trình đặc biệt (như SSH trong HTTPS) để mã hóa thông điệp truyền đi.
+        - 
+
+        ...
+- Identity spoofing:
+    - Giả mạo nạn nhân không cần xác minh.
+    - Man-in-the-middle: hacker dùng thiết bị mạng, nạn nhân kết nối vào, hacker sẽ nhận được message giữa 2 nạn nhân và có thể sửa đổi -> mã hóa, chứng thực cho chắc.
+    - Message replays: hacker chặn gói tin chứa certificate, dùng nó để giả mạo nạn nhân.
+    - Network spoofing: 
+        - SYN flooding: lấp đầy bộ đệm **TCP** gói SYN của nạn nhân -> không thể liên lạc máy khác.
+        - TCP hijacking: sử dụng gói tin fake, chiếm kết nối của nạn nhân tới đích -> TCP Wrapper kiểm tra IP tại Transport.
+        - ARP spoofing: thay địa chỉ MAC đích thành của hacker -> kiểm tra tên miền, make sure gói tin k đổi địa chỉ khi truyền.
+- Buffer-overflow exploitation:
+    - Data vô > buffer size -> tràn.
+    - Các hàm **strcat, strcp, sprintf, vsprintf, bcopy, get, scanf ..** trong **C**.
+- Repudiation:
+    - Tấn công bác bỏ: thiếu tính pháp lý, xác thực -> someone có thể không thừa nhận việc làm của bản thân (trốn tội).
+    - Dùng mã hóa, xác thực -> hết chối.
+- Intrusion:
+    - Xâm nhập trái phép máy tính của người khác, đánh cắp data và resouces...
+    - Kiểm tra, đóng các cổng không dùng.
+- DOS/DDOS:
+    - Tấn công từ chối dịch vụ -> spam cho khỏi xài.
+    - Smuft: gửi nhiều lệnh ping, short time -> Nhiều ICMP của nạn nhân được gửi -> Nhiều ICMP replay đến nạn nhân -> Quá tải.
+    - Trojan -> 1 mạng Botnet -> nhiều máy Zombie
+- Malicious software:
+    - Virus: phần mềm, có thể tự sao chép, lây nhiễm, không đứng 1 mình.
+    - Worms: chương trình, có thể tự sao chép, có thể đứng 1 mình, thực thi bất kỳ thời điểm.
+    - Trojan horses: fake chương trình có ích, không tự sao chép, kích hoạt khi chạy chương trình, điều kiển từ xa, backdoor...
+    - Logic boms: sub program/instruction, kích hoạt theo điều kiện.
+    - Backdoors: đoạn chương trình bí mật, mở các port khác.
+    - Spyware: phần mềm, theo dõi, browser hijacking, zombieware.
+- Mô hình bảo mật:
+    - Cơ bản:
+        - Cryptosystem
+        - Firewall
+        - Anti-malicious system sofware
+        - Intrusion detection system
+    - Defense in dept:
+        - Application
+        - Host
+        - Internal network
+        - Perimeter
+        - Physical
+        - Policies, procedures, awareness
+- Trojan:
+    - RAT: back orifice, girlfriend, netbus
+    - Keylogger: hard/soft, 3 thành phần:
+        - Chương trình điều khiển: thiết lập
+        - Hook file: nhận thao tác
+        - Log file: ghi log
+- Virus:
+    - 
