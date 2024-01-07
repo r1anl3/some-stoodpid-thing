@@ -127,7 +127,7 @@
             - Chuyển virus, quyền tới vùng nhớ `segment:offset` mới
             - Boot và file cần có
         ...
-- Giải thuật mã hoá:
+- Giải thuật mã hoá cổ điển:
     - Mã thay thế đơn giản: hoán vị theo khoá.
     - Mã thay thế n-gram: thay thế cụm n ký tự.
     - Mã hoán vị bậc d
@@ -138,3 +138,41 @@
         - Đưa m và k về binary (quy định trước)
         - XOR với nhau 
         - Đưa về ký tự
+    - Mã tuyến tính: 
+        - e(x) = ax + b (mod 26), a: số nguyến tố từ 1 - 26, b: số bước nhảy từ 1 - 26
+    - Mã playfair:
+        - Ma trận khoá: thêm các ký tự của khoá vào ma trận, nếu chưa đầy thì thêm ký tự theo tứ tự từ A -> Z. Trong đó I J được coi là 1 ký tự.
+        - Giải thuật:
+            - Từng cặp 2 ký tự
+            - Dư 1 ký tự, thêm X vào cuối
+            - Cùng dòng, shift phải
+            - Cùng cột, shif dưới
+            - Khác dòng, khác cột, shift 2 góc tạo thành tứ giác
+    - Mã hill:
+        - Mã hoá từng chuỗi n ký tự trên plaintext (vector P) với n là kích thước ma trận vuông Hill: C = HP mod 26.
+    - Phá mã:
+        - Dựa vào đặc điểm ngôn ngữ
+        - Dựa vào tần suất xuất hiện của các chữ cái trong bảng chữ cái thông qua thống kê chính thức.
+        - Dựa vào số lượng các ký tự trong bảng mã để xác định thông điệp gốc.
+- Giải thuật mã hoá hiện đại:
+    - DES:
+        - Dùng khoá độ dài 56 bit để mã hoá dữ liệu 64 bit
+        - Mã hoá, giải mã chung khoá
+        - Hiện nay: 3DES
+        - Giải thuật:
+            - Sử dụng một khoá K tạo ra n khoá con K1, K2, …, Kn bằng giải thuật sinh khóa.
+            - Hoán vị dữ liệu đầu tiên (Initial permutation).
+            - Thực hiện mã hóa DES qua n vòng lặp. Tại mỗi vòng lặp:
+                - Dữ liệu được tách thành hai phần.
+                - Áp dụng các phép toán thay thế lên một phần, phần còn lại giữ nguyên.
+            - Hoán vị hai phần cho nhau.
+            - Hoán vị dữ liệu lần cuối (Final Permutation).
+    - AES:
+        - Dữ liệu đầu vào 16 bytes
+        - Kích thước khoá: 128, 192, 256
+        - Mỗi khoá con gồm 4 byte
+        - Các hàm:
+            - SubBytes: mỗi byte thay thế bằng byte khác, sử dụng bảng tham chiếu s-box, 
+            - ShiftRows: hàng đầu không đổi, hàng thứ n dịch n-1 cột
+            - MixColumns: mỗi cột 1 đa thức, nhân modulo $x^4 + 1$ với hàm cố định $c(x) = 3x^2 + x^2 + x + 2 $
+            - AddRoundKey: mỗi byte $\oplus$ 1 byte trong khoá con 
