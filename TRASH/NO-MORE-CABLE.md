@@ -53,6 +53,16 @@
 
         
 - Technologies for different scenarios/applications {wifi}, comparisons of network technologies  20%
+    - Single-hop
+        - Chia không gian thành các cell, mỗi host là 1 cell
+        - **Base station**: chịu trách nhiệm cho việc giao tiếp giữa các hosts/nodes trong 1 cell
+        - **Mobile host** có thể đổi cell trong quá trình giao tiếp
+        - **Hand-off** xuất hiện khi một **mobile host** giao tiếp thông qua **base station** mới
+        - Tái sử dụng các kênh(channels) để tối đa tốc độ truyền
+            - Chia bản đồ địa lí thành các **cells**
+            - Frequencies/timeslots/codes reused spatially-separated locations.
+            - Co-channel interference between same color cells.
+            
 
 - Flows of operations [linux network kernel, drivers, packet transmission, packet reception/forwarding]    40%
 
