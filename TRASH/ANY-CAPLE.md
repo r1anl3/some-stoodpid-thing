@@ -36,3 +36,9 @@
             $d_{trans} = \text{chiều dài gói tin(bits) / băng thông liên kết(bps)}$
         - $d_{prop}$: lan truyền,
             $d_{prop} = \text{độ dài đường liên kết vật lí(m)/tốc độ lan truyền(m/s)}$
+        - Queuing delay and bandwidth utilization:
+            `queue depth = utilization/(1-utilization)`
+            Ex:  A packet switch has **five** users, each offering packets at a rate of **10 bps**. The average length of the packets is **1024 bits**. The packet switch needs to transmit this data over a **56-kbps** WAN circuit.
+            - Load = 5 x 10 x 1024 = 51,200 bps.
+            - Utilization = 51,200/56,000 = 91.4%
+            - Avg packets in queue = (0.914)/(1-0.914) = 10.63 packets
