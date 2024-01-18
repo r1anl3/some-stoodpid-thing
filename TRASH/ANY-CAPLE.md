@@ -14,3 +14,25 @@
         -  Operate: Operation is the final test of the effectiveness of the design. The network is monitored during this phase for performance problems and any faults to provide input into the optimize phase of the network life cycle.
         - Optimize:  The optimize phase may lead to a network redesign if too many problems arise because of design errors or as network performance degrades over time as actual use and capabilities diverge. Redesign can also be required when requirements change significantly
         - Retire: When the network, or a part of the network, is out-of-date, it might be taken out of production. Although Retire is not incorporated into the name of the life cycle(PDIOO), it is nonetheless an important phase. The retire phase wraps around to the plan phase. The PDIOO life cycle repeats as network requirements evolve.
+- **Chương 2**
+    - Tính sẵn sàng: `Availability = MTBF / (MTBF + MTTR)`
+    - Giải thích ký hiệu:
+        - MTBF: mean time between failure/thời gian không lỗi
+        - MTTR: mean time to repair/thời gian sửa lỗi
+    - Đánh giá hiệu năng:
+        - Capacity(bandwith): khả năng truyền dữ liệu, tính bằng bps.
+        - Utilization(khả năng sử dụng): phần trăm **capacity** được đang sử dụng.
+        - Optimum ultilization(khả năng sử dụng tối đa): trung bình lớn nhất của **utilization**.
+        - Throughput(thông lượng): lượng data truyền đi không lỗi trong khoảng thời gian.
+        - Offered load: tổng data của các node trong mạng.
+        - Accuracy: độ chính xác, liên quan tới các traffic.
+        - Efficiency: độ hiệu quả
+        ...
+    - Bốn nguồn gây trễ gói tin:
+        $d_{nodal} = d_{proc} + d_{queue} + d_{trans} + d_{prop} $
+        - $d_{proc}$: xử lí tại nút
+        - $d_{queue}$: xếp hàng
+        - $d_{trans}$: truyền, 
+            $d_{trans} = \text{chiều dài gói tin(bits) / băng thông liên kết(bps)}$
+        - $d_{prop}$: lan truyền,
+            $d_{prop} = \text{độ dài đường liên kết vật lí(m)/tốc độ lan truyền(m/s)}$
