@@ -79,3 +79,27 @@
             - `show running-config`
             - `show startup-config`
             - `show version`
+- **Chương 4**
+    - Traffic flow for network app:
+        - Terminal/Host: asysmmetric. The terminal sends a few characters and the host sends many characters.
+        - Client/Server: most widely used. 
+            - Clients send queries and requests to a server. The server responds with data or permission for the client to send data. 
+            - The flow is usually **bidirectional** and **asymmetric**. 
+            - Requests from the client are typically small frames, except when writing data to the server, in which case they are larger. 
+            - Responses from the server range from **64 bytes to 1500 bytes or more**, depending on the maximum frame size allowed for the data link layer in use.
+            - Include: Server Message Block (SMB), Network File System (NFS), Apple Filing Protocol (AFP), and NetWare Core Protocol (NCP)
+        - Thin Client:
+            - A special case of Client/Server, simple.
+            - With thin client technology (also known as server-based computing), user applications originate on a central server. In some cases, the application runs on the central server, and in other cases, the software is installed on the server and is downloaded into the client machine for execution.
+            - Advantage: Lower support costs.
+            - Disadvantage:  the amount of data flowing from the server to the client can be substantial(lớn)
+        - Peer-to-Peer:
+            - **bidirectional and symmetric**
+            - Each host acts as both a client and server.
+            - Use: downloading
+        - Server/Server:
+            - Servers talk to other servers to implement directory services, to cache heavily used data, to mirror data for load balancing and redundancy, to back up data, and to broadcast service availability
+            - Bidrectional
+        - Distribute computing:
+            - Require multiple computing nodes working together to complete a job.
+    - somethinghere
