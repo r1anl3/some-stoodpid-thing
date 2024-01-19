@@ -55,4 +55,27 @@
         - Airport code styles: `San Francisco = SFO, Oakland = OAK,...`
         - Standard naming systems: `DNS, for IP networks, or NetBIOS Windows Internet Naming Service (WINS) on Windows networks`
     - Wireless installation:
-        - Reflection/Phản xạ: 
+        - Reflection/Phản xạ: Reflection causes the signal to bounce back on itself. The signal can interfere with itself in the air and affect the receiver’s ability to discriminate between the signal and noise in the environment. Reflection is caused by metal surfaces such as steel girders, scaffolding, shelving units, steel pillars, and metal doors. Implementing a Wireless LAN (WLAN) across a parking lot can be tricky because of metal cars that come and go.
+        - Absorption/Hấp thụ: Some of the electromagnetic energy of the signal can be absorbed by the material in objects through which it passes, resulting in a reduced signal level. Water has significant absorption properties, and objects such as trees or thick wooden structures can have a high water content. Implementing a WLAN in a coffee shop can be tricky if there are large canisters of liquid coffee. Coffee-shop WLAN users have also noticed that people coming and going can affect the signal level. (On StarTrek, a non-human character once called a human “an ugly giant bag of mostly water”!)
+        - Refraction/Khúc xạ: When an RF signal passes from a medium with one density into a medium with another density, the signal can be bent, much like light passing through a prism. The signal changes direction and may interfere with the non-refracted signal. It can take a different path and encounter other, unexpected obstructions, and arrive at recipients damaged or later than expected. As an example, a water tank not only introduces absorption, but the difference in density between the atmosphere and the water can bend the RF signal.
+        - Diffraction/Nhiễu xạ: Diffraction, which is similar to refraction, results when a region through which the RF signal can pass easily is adjacent to a region in which reflective obstructions exist. Like refraction, the RF signal is bent around the edge of the diffractive region and can then interfere with that part of the RF signal that is not bent.
+    - Network healthcheck:
+        - Performance: peak load
+        - Availability: MTBF, MTTR
+        - Network utilization: time
+        - Bandwidth utilization: **absolute usage** specifies how much bandwidth is used by the protocol in comparison to the total capacity of the segment (for example, in comparison to 100 Mbps on Fast Ethernet)
+        - Accuracy: bit error rate test(BERT), CRC
+        - Switch ethernet networks: CSMA/CD
+        - Efficiency: maximum transmission unit(MTU)
+        - Delay and response time: round-trip time (RTT)
+        - Status routers, switches, firewalls: CISCO commands
+            - `show buffers`
+            - `show cdp neighbors detail`
+            - `show environment`
+            - `show interfaces`
+            - `show ip cache flow`
+            - `show memory`
+            - `show processes`
+            - `show running-config`
+            - `show startup-config`
+            - `show version`
