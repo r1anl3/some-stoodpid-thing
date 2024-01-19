@@ -1,4 +1,4 @@
-#Ôn tập Thiết kế mạng
+# Ôn tập Thiết kế mạng
 - **Chương 1**
     - OSI model: 7 tầng
         - Segment: A single network bounded by a switch or router and based on a particular Layer 1 and Layer 2 protocol such as Fast Ethernet.
@@ -39,6 +39,20 @@
         - Queuing delay and bandwidth utilization:
             `queue depth = utilization/(1-utilization)`
             Ex:  A packet switch has **five** users, each offering packets at a rate of **10 bps**. The average length of the packets is **1024 bits**. The packet switch needs to transmit this data over a **56-kbps** WAN circuit.
-            - Load = 5 x 10 x 1024 = 51,200 bps.
-            - Utilization = 51,200/56,000 = 91.4%
-            - Avg packets in queue = (0.914)/(1-0.914) = 10.63 packets
+            - Load $= 5 \times 10 \times 1024 = 51,200 (bps)$.
+            - Utilization $= \frac{51,200}{56,000}= 91.4 \% $
+            - Avg packets in queue $= \frac{0.914}{1-0.914} = 10.63 (packets)$
+- **Chương 3**
+    - Data link layer map includes:
+        - An indication of the data link layer technology for WANs and LANs (Frame Relay, Point-to-Point Protocol [PPP], VPN, 100-Mbps or 1000-Mbps Ethernet, and so on)
+        - The name of the service provider for WANs
+        - WAN circuit IDs
+        - The location and high-level configuration information for LAN switches (for example, the location of the desired root bridge if the Spanning Tree Protocol [STP] is used)
+        - The location and reach of any VLANs and VLAN Trunking Protocol (VTP) configurations
+        - The location and high-level configuration of trunks between LAN switches
+        - The location and high-level configuration of any Layer 2 firewalls
+    - Naming network element:
+        - Airport code styles: `San Francisco = SFO, Oakland = OAK,...`
+        - Standard naming systems: `DNS, for IP networks, or NetBIOS Windows Internet Naming Service (WINS) on Windows networks`
+    - Wireless installation:
+        - Reflection/Phản xạ: 
