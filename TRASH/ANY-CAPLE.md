@@ -102,4 +102,28 @@
             - Bidrectional
         - Distribute computing:
             - Require multiple computing nodes working together to complete a job.
-    - somethinghere
+    - Broadcast/Multicast:
+        - A broadcast frame is a frame that goes to all network stations on a LAN. At the data link layer, the destination address of a broadcast frame is FF:FF:FF:FF:FF:FF (all 1s in binary). 
+        - A multicast frame is a frame that goes to a subset of stations. For example, a frame destined to 01:00:0C:CC:CC:CC goes to Cisco routers and switches that are running the Cisco Discovery Protocol (CDP) on a LAN.
+    - Network efficency:
+        - Frame size:
+            - Using a frame size that is the maximum supported for the medium in use has a positive impact on network performance for bulk applications.
+            - In an IP environment, you should avoid increasing the MTU to larger than the maximum supported for the media traversed by the frames, to avoid fragmentation and reassembly of frames.
+            - Modern operating systems support MTU discovery, dynamic change.
+        - Windowing and flow control:
+            - FTP: TCP port 20(data) and TCP port 21(control)
+            - Telnet: TCP port 23
+            - SMTP: TCP port 25
+            - HTTP: TCP port 80
+            - SNMP: UDP port 161 and 162
+            - DNS: UDP port 53
+            - TFTP: UDP port 69
+            - DHCP: UDP port 67(server)/68(client)
+            - RCP: UDP port 111
+    - ATM QoS specification:
+        - Constant bit rate(CBR)
+        - Realtime variable bit rate(rt-VBR)
+        - Non-Realtime variable bit rate(nrt-VBR)
+        - Unspecified bit rate(UBR)
+        - Available bit rate(ABR)
+        - Guaranteed frame rate(GFR)
