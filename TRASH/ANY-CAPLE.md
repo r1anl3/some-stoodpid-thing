@@ -191,3 +191,60 @@
         - Site-to-Site VPN:
             - Most common topologies: Hub-and-spoke, Mesh, Hierarchical network.
         - Remote-access VPN:
+- **Chương 6**
+    - 5 Regional Internet Registries(RIRs)
+        - American Registry for Internet Numbers (ARIN)
+        - RIPE Network Coordination Centre (RIPE NCC)
+        - Asia-Pacific Network Information Centre (APNIC)
+        - Latin American and Caribbean Internet Addresses Registry (LACNIC)
+        - African Network Information Centre (AfriNIC)
+    - Private networks:
+        - `10.0.0.0 - 10.255.255.255`
+        - `172.16.0.0 - 172.31.255.255`
+        - `192.168.0.0 - 192.168.255.255`
+    - Dynamic Host Configuration Protocol(DHCP)
+        - DHCP is based on BOOTP, which hosts can interoperate with DHCP hosts
+        - DHCP uses a client/server model.
+        - DHCP supports three methods for IP address allocation:
+            - `Automatic allocation`: A **DHCP server** assigns a **permanent** IP address to a client.
+            - `Dynamic allocation`: A **DHCP server** assigns an IP address to a client for a **limited period of time**.
+            - `Manual allocation`: A **network administrator** assigns a **permanent** IP address to a client, and DHCP is used simply to convey the assigned address to the client.
+        - DHCP Relay Agents:
+            - With Cisco routers, you can use the `ip helper-address` command on each router interface where clients reside to cause the router to become a DHCP relay agent.
+    - Network Address Translation(NAT)
+        - Converting addresses from an inside network to addresses that are appropriate for an outside network, and vice versa.
+        - NAT is useful when hosts that need access to Internet services have private addresses.
+    - Classless Routing Versus Classful Routing
+        - Class A - C:
+            - `Class A`: First bit = 0, Prefix = 8 bits
+            - `Class B`: First 2 bits = 10, Prefix = 16 bits
+            - `Class C`: First 3 bits = 110, Prefix = 24 bits
+        - Route Summarization example(*slide 18 chapter 6*)
+            - The branch-office has 4 subnets:
+                - `172.16.0.0`
+                - `172.17.0.0`
+                - `172.18.0.0`
+                - `172.19.0.0`
+            - The branch-office router  can summarize its local network numbers and report that it can reach `172.16.0.0/14`.
+            - By advertising this single route, the router is saying, "Route packets to me if the destination has the first 14 bits set to 172.16"
+            - The router is reporting a route to all networks where the first 14 bits are equal to `10101100000100` in binary
+            - To understand the summarization in this example, you should convert the number 172 to binary, which results in the binary number `10101100`. Convert number 16 - 19 to binary (*slide 19 chapter 6*)
+            - Notice that the leftmost 6 bits for the numbers 16 through 19 are identical. This is what makes route summarization with a prefix length of 14 possible in this example.
+            - First 8 bits for the networks are identical (all the networks have 172 for the first octet), and the next 6 bits are also identical.
+            - TIPS:
+                - Mạng lớp nào
+                - Cần bao nhiêu mạng con -> mượn bao nhiêu bit
+                - Trừ số bit mượn -> CIDR block
+    - Hierarchy in IPv6 address
+        - IPv6 increases the IP address size from 32 bits to 128 bits.
+        - Format: `x:x:x:x:x:x:x:x`
+        - Must be at least one numeral in every field (except when suppressing multiple fields of 0s)
+        - You can substitute double colons (::) at the start, middle, or end of an address to indicate consecutive 16-bit fields of 0s.
+        - Example: 
+            - This Ipv6: `2031:0000:130F:0000:0000:09C0:876A:130B`
+            - Can be: `2031:0:130F::9C0:876A:130B`
+            - Can not be: `2031::130F::9C0:876A:130B`
+        - Global unicast address:
+            - `Global routing prefix: n bits`
+            - `Subnet ID: m bits`
+            - `Interface ID: 128-n-m bits`
