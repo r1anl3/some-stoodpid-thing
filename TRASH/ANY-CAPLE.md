@@ -134,5 +134,5 @@
     - Flat WAN topology:
         - Each site has a WAN router that connects to two other adjacent sites via point-to-point links
         - Low cost and reasonably good availability.
-        ![](/Source/Flat_vs_hierarchy_topology_-_en.png)
+        ![.](https://upload.wikimedia.org/wikipedia/commons/3/35/Flat_vs_hierarchy_topology_-_en.png)
     - Flat LAN topology:
