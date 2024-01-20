@@ -103,8 +103,8 @@
         - Distribute computing:
             - Require multiple computing nodes working together to complete a job.
     - Broadcast/Multicast:
-        - A broadcast frame is a frame that goes to all network stations on a LAN. At the data link layer, the destination address of a broadcast frame is FF:FF:FF:FF:FF:FF (all 1s in binary). 
-        - A multicast frame is a frame that goes to a subset of stations. For example, a frame destined to 01:00:0C:CC:CC:CC goes to Cisco routers and switches that are running the Cisco Discovery Protocol (CDP) on a LAN.
+        - A broadcast frame is a frame that goes to all network stations on a LAN. At the data link layer, the destination address of a broadcast frame is `FF:FF:FF:FF:FF:FF` (all 1s in binary). 
+        - A multicast frame is a frame that goes to a subset of stations. For example, a frame destined to `01:00:0C:CC:CC:CC` goes to Cisco routers and switches that are running the Cisco Discovery Protocol (CDP) on a LAN.
     - Network efficency:
         - Frame size:
             - Using a frame size that is the maximum supported for the medium in use has a positive impact on network performance for bulk applications.
@@ -134,5 +134,30 @@
     - Flat WAN topology:
         - Each site has a WAN router that connects to two other adjacent sites via point-to-point links
         - Low cost and reasonably good availability.
-        ![.](https://upload.wikimedia.org/wikipedia/commons/3/35/Flat_vs_hierarchy_topology_-_en.png)
+        <br>![.](https://upload.wikimedia.org/wikipedia/commons/3/35/Flat_vs_hierarchy_topology_-_en.png)
     - Flat LAN topology:
+        - The PCs and servers implemented a media-access control process, such as token passing or carrier sense multiple access with collision detection (CSMA/CD) to control access to the shared bandwidth.
+        - ...
+    - Mesh Versus Hierarchical-Mesh Topologies
+        - A full-mesh network provides complete redundancy and offers good performance because there is just a single-link delay between any two sites.
+        - A partial-mesh network has fewer connections.
+        - `number of links in a full-mesh topology = (N * (N – 1)) / 2, N is the number of routers or switches.`
+    - Classic Three-Layer Hierarchical Model
+        - The core layer provides optimal transport between sites.
+        - The distribution layer connects network services to the access layer and implements policies regarding security, traffic loading, and routing.
+        - In a WAN design, the access layer consists of the routers at the edge of the campus networks. In a campus network, the access layer provides switches or hubs for end user access.
+        - Core layer: ACL, Firewalls, IDS(intrusion detection systems)...
+        - Distribution layer: VLAN
+        - Access layer: routers, switches, bridges shared-media hubs, and wireless access points
+    - Cisco SAFE architechture:
+        - Core: high-speed infrastructure that provides reliable and scalable Layer 2 and Layer 3 transport.
+        - Data center: : 
+            - The data center hosts servers, applications, and storage devices for use by internal users. 
+            - The data center also connects the network infrastructure that these devices require, including routers, switches, load balancers, content delivery devices, and application acceleration devices.
+        - Campus: The campus network provides network access to end users and devices located in a single geographical location.
+        - Management: 
+            - The management network provides monitoring, analysis, authentication, and logging services.
+            - Support: RADIUS, Kerberos, Network Time Protocol (NTP), Simple Network Management Protocol (SNMP), and syslog traffic
+        - WAN edge: The WAN edge is the portion of the network that aggregates WAN links that connect geographically distant branch offices to a central site or regional hub.
+        - Internet edge: The Internet edge is the infrastructure that provides connectivity to the Internet and that acts as a gateway for the enterprise to the rest of the world.
+        - Branches: 
