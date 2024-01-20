@@ -160,4 +160,34 @@
             - Support: RADIUS, Kerberos, Network Time Protocol (NTP), Simple Network Management Protocol (SNMP), and syslog traffic
         - WAN edge: The WAN edge is the portion of the network that aggregates WAN links that connect geographically distant branch offices to a central site or regional hub.
         - Internet edge: The Internet edge is the infrastructure that provides connectivity to the Internet and that acts as a gateway for the enterprise to the rest of the world.
-        - Branches: 
+        - Branches: Branches provide connectivity to users and devices at remote locations.
+        - Extranet: An extranet allows selected business partners, customers, and suppliers to access a portion of the network via secure protocols.
+        - Partner site: Partner sites are networks owned by business partners, customers, and suppliers.
+        - E-commerce: The e-commerce module hosts applications, servers, and data used in the selling and buying of products.
+        - Teleworker: The teleworker module is the home office of a full-time or part-time employee.
+        - Cisco SensorBase: : Cisco SensorBase consists of threat collection servers that receive daily updates from globally deployed sensors regarding threats.
+    - Rapid Spanning Tree Protocol(RSTP)
+        - Bridge port states:
+            - `Discarding`: port không học từ địa chỉ MAC hay chuyển tiếp user's frame
+            - `Learning`: port học từ địa chỉ MAC để thêm vào bảng địa chỉ MAC nhưng không chuyển tiếp user's frame
+            - `Forwarding`: trái ngược `Discarding`
+        - Bridge port roles:
+            - `Root`: Assigned to the one port on a nonroot bridge that provides the lowest-cost path to the root bridge.
+            - `Designated`: Assigned to the one port attached to a LAN that provides the lowest-cost path from that LAN to the root bridge.
+            - `Alternate`: Assigned to a port that offers an alternative path in the direction of the root bridge to that provided by the bridge’s root port.
+            - `Backup`: Assigned to a port on a designated bridge that acts as a backup for the path provided by a designated port in the direction of the leaves of the spanning tree.
+            - `Disabled`: Assigned to a port that is not operational or is excluded from the active topology by network management.
+    - Hot Standby Router Protocol(HSRP)
+        - HSRP works by creating a virtual router, also called a phantom router.
+        - The virtual router has its own IP and MAC addresses.
+        - Each workstation is configured to use the virtual router as its default gateway.
+        - HSRP routers on a LAN communicate among themselves to designate an active and standby router.
+        - HSRP also works for proxy ARP.
+    - Virtual Private Network(VPN)
+        - Virtual private networks (VPN) use advanced encryption and tunneling to permit organizations to establish secure, end-to-end, private network connections over a third-party network.
+        - Point-to-point connectivity across the third-party network is typically provided by a tunneling protocol. Tunneling is a technique for encapsulating packets of one protocol inside another protocol.
+        - **Layer 2** tunneling methods encapsulate at the **data link** layer of the OSI model.
+        - **Layer 3** tunneling encapsulates at the **network layer**.
+        - Site-to-Site VPN:
+            - Most common topologies: Hub-and-spoke, Mesh, Hierarchical network.
+        - Remote-access VPN:
