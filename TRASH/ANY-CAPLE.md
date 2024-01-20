@@ -127,3 +127,13 @@
         - Unspecified bit rate(UBR)
         - Available bit rate(ABR)
         - Guaranteed frame rate(GFR)
+- **Chương 5**
+    - A typical hierachical topology:
+        - `Core layer`: high-end router and switches, optimized for availability and performance.
+        - `Distribution layer`: routers and switches, implement policies. In SME, core layer and distribution layer can be combined
+    - Flat WAN topology:
+        - Each site has a WAN router that connects to two other adjacent sites via point-to-point links
+        - Low cost and reasonably good availability.
+        ![somethinghere](https://upload.wikimedia.org/wikipedia/commons/3/35/Flat_vs_hierarchy_topology_-_en.png?20171018210945)
+    - Flat LAN topology:
+        - 
